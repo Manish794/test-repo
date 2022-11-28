@@ -52,6 +52,7 @@ class SecondServiceTest {
         assertTimeout(Duration.ofMillis(100), () -> secondService.prepareMessage("Manish"));
     }
 
+	@Test
     public void testWithTimeError(){
         assertTimeout(Duration.ofMillis(20), () -> secondService.prepareMessage("Manish"));
     }
